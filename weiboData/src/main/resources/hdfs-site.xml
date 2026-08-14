@@ -1,0 +1,22 @@
+<configuration>
+    <!-- NameNode directory -->
+    <property>
+        <name>dfs.namenode.name.dir</name>
+        <value>file:///data/hadoop/hdfs/name</value>
+    </property>
+    <!-- DataNode directory -->
+    <property>
+        <name>dfs.datanode.data.dir</name>
+        <value>file:///data/hadoop/hdfs/data</value>
+    </property>
+    <!-- Allow HTTP access to NameNode -->
+    <property>
+        <name>dfs.namenode.secondary.http-address</name>
+        <value>master1:50070</value>
+    </property>
+    <!-- Replication factor -->
+    <property>
+        <name>dfs.replication</name>
+        <value>3</value>
+    </property>
+</configuration>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xbx.peoplepoll.mapper.DayPostCountMapper">
+<!--  查询表  -->
+    <select id="selectAll" resultType="com.xbx.peoplepoll.pojo.DayPost">
+        select
+        dt,
+        count,
+        create_time
+        from day_post_count
+    </select>
+
+</mapper>

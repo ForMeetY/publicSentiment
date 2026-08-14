@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "https://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.xbx.peoplepoll.mapper.UserGmmProfileMapper">
+    <!-- 查询全部 -->
+    <select id="getAllUserInfo" resultType="com.xbx.peoplepoll.pojo.UserGmmProfile">
+       select
+        user_id,
+        screen_name,
+        hourly_sentiment_stddev,
+        night_post_ratio,
+        region_diversity_score,
+        top_region_avg_score,
+        sentiment_leverage,
+        cluster_id,
+        prob_0,
+        prob_1,
+        prob_2,
+        prob_3,
+        update_time
+        from user_gmm_profile order by user_id asc
+    </select>
+    <!-- 按user_id查询 -->
+    <select id="getUserInfoById" resultType="com.xbx.peoplepoll.pojo.UserGmmProfile">
+        select user_id,
+        screen_name,
+        hourly_sentiment_stddev,
+        night_post_ratio,
+        region_diversity_score,
+        top_region_avg_score,
+        sentiment_leverage,
+        cluster_id,
+        prob_0,
+        prob_1,
+        prob_2,
+        prob_3,
+        update_time
+        from user_gmm_profile
+        where user_id = #{userId}
+    </select>
+
+
+
+</mapper>

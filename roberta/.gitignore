@@ -1,0 +1,46 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# 虚拟环境
+.venv/
+venv/
+env/
+ENV/
+
+# 分发 / 打包
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# IDE
+# =========================
+.idea/
+.vscode/
+*.iml
+
+# =========================
+# 缓存与临时文件
+# =========================
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+.DS_Store
+Thumbs.db
+
+# =========================
+# 模型文件说明
+# =========================
+# 注意：模型文件体积较大（约 13GB），建议使用 git-lfs 或网盘管理，
+# 不要把训练 checkpoint 直接提交进 git。
+# 如需要排除训练中间产物，取消下面注释：
+# models/roberta-wwm/output/
+# models/roberta-wwm/label_roberta/data/results/

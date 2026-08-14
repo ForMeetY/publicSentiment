@@ -1,0 +1,108 @@
+# =========================
+# IntelliJ IDEA
+# =========================
+.idea/
+*.iml
+out/
+
+# =========================
+# Maven
+# =========================
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+
+# =========================
+# Gradle
+# =========================
+.gradle/
+build/
+
+# =========================
+# Scala / Spark
+# =========================
+metastore_db/
+spark-warehouse/
+derby.log
+
+# =========================
+# Hadoop / Hive
+# =========================
+*.crc
+hive.log
+hadoop-*.log
+
+# =========================
+# Logs
+# =========================
+logs/
+*.log
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Python (Scrapy 爬虫部分)
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# virtual env
+venv/
+env/
+.venv/
+
+# scrapy cache
+.scrapy/
+
+# =========================
+# Node.js / Frontend
+# =========================
+node_modules/
+dist/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Environment
+# =========================
+.env
+.env.*
+application-local.yml
+application-dev.yml
+
+# =========================
+# Database
+# =========================
+*.db
+*.sqlite
+*.sqlite3
+
+# =========================
+# Temporary files
+# =========================
+tmp/
+temp/
+*.tmp
+
+# =========================
+# VSCode
+# =========================
+.vscode/
+
+# =========================
+# Mac/Linux
+# =========================
+*.swp
+*.swo
+*~
