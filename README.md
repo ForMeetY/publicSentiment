@@ -43,15 +43,15 @@ graph LR
 
 ## 相关页面
 
-![](E:\publicSentiment\imgs\首页.jpg)
+![](./imgs/首页.jpg)
 
-![](E:\publicSentiment\imgs\情感分析.jpg)
+![](./imgs/情感分析.jpg)
 
-![](E:\publicSentiment\imgs\用户画像.jpg)
+![](./imgs/用户画像.jpg)
 
-![](E:\publicSentiment\imgs\画像分析.jpg)
+![](./imgs/画像分析.jpg)
 
-![](E:\publicSentiment\imgs\推荐系统.jpg)
+![](./imgs/推荐系统.jpg)
 
 ## 技术栈
 
