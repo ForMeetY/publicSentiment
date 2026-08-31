@@ -10,7 +10,7 @@ import java.time.format.DateTimeFormatter
 object Constant {
   final val url = "jdbc:mysql://master1:3306/weibo?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai"
   final val user = "root"
-  final val pwd = "1234"
+  final val pwd = sys.env.getOrElse("MYSQL_PASSWORD", "")
   // 当前时间  格式 "yyyy-MM-dd"
   private val today: LocalDate = LocalDate.now()
   val now: String = today.format(DateTimeFormatter.ofPattern("yyyy-MM-dd"))

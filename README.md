@@ -41,6 +41,18 @@ graph LR
 
 **数据链路**：微博关键词搜索 → Scrapy 爬虫 → Redis 集群去重（7 天 TTL）→ Kafka → Spark Structured Streaming 清洗（规则 + 结巴分词 + TF-IDF + 逻辑回归过滤垃圾帖）→ Hive 数仓多维分区 → 三个 FastAPI 模型服务增量打标 → Spark 聚合统计 / 用户画像 / 个性化推荐 → MySQL → Spring Boot（Redis 缓存 + 定时预计算）→ Vue 3 大屏。
 
+## 相关页面
+
+![](E:\publicSentiment\imgs\首页.jpg)
+
+![](E:\publicSentiment\imgs\情感分析.jpg)
+
+![](E:\publicSentiment\imgs\用户画像.jpg)
+
+![](E:\publicSentiment\imgs\画像分析.jpg)
+
+![](E:\publicSentiment\imgs\推荐系统.jpg)
+
 ## 技术栈
 
 | 层次 | 技术 |

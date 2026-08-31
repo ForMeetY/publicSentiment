@@ -1,6 +1,6 @@
 package com.weibo.data
 
-import com.weibo.utils.hiveUtils.ReadHiveUtils
+
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions.col
 
@@ -26,7 +26,6 @@ object getHive {
     ))
 
     // 2. 直接读取 HDFS 物理地址
-    // 注意：如果你不知道确切的 HDFS 路径，请在 Hive 里执行 `DESCRIBE FORMATTED weibo.classbydayandhour` 查看 "Location"
     val path = "hdfs://192.168.88.120:8020/user/hive/warehouse/weibo.db/classbydayandhour"
 
     val data = spark.read

@@ -11,5 +11,5 @@ public class RedisConstant {
     public static final int REDIS_PORT2 = 6379;
     public static final String REDIS_HOST3 = "192.168.88.122";
     public static final int REDIS_PORT3 = 6379;
-    public static final String REDIS_PASSWORD = "123";
+    public static final String REDIS_PASSWORD = System.getenv("REDIS_PASSWORD") != null ? System.getenv("REDIS_PASSWORD") : "123";
 }

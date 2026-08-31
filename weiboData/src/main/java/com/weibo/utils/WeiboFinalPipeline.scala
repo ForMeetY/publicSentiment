@@ -98,10 +98,6 @@ object WeiboFinalPipeline {
     df.withColumn("words", jiebaUDF(col("text")))
   }
 
-
-
-
-
   // 特征工程
   object RuleFeatureBuilder {
     def build(df: DataFrame): DataFrame = {

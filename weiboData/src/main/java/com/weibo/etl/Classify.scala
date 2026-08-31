@@ -3,7 +3,7 @@ package com.weibo.etl
 import java.time.{LocalDate, LocalTime}
 
 import org.apache.spark.sql.functions.{max,asc, avg, col, count, countDistinct, date_format, desc, explode, first, hour, lit, round, row_number, split, stddev_samp, sum, when}
-import org.apache.spark.sql.{DataFrame, SparkSession, functions}
+import org.apache.spark.sql.{DataFrame, SparkSession}
 import com.weibo.utils.hiveUtils.{HiveTableExists, ReadHiveUtils}
 import org.apache.spark.sql.streaming.Trigger
 import com.weibo.utils.mysqlUtils.WriteMysql

@@ -408,7 +408,7 @@ class RedisDedupPipeline:
             self.redis = RedisCluster(
                 host="192.168.88.120",
                 port=6379,
-                password="123",
+                password=os.environ.get("REDIS_PASSWORD", ""),
                 decode_responses=True,
                 skip_full_coverage_check=True
             )

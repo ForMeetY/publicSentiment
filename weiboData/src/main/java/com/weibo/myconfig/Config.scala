@@ -18,5 +18,5 @@ package com.weibo.myconfig
     // MySQL
     val MYSQL_URL = "jdbc:mysql://master1:3306/weibo?useSSL=false"
     val MYSQL_USER = "root"
-    val MYSQL_PASSWORD = "123456"
+    val MYSQL_PASSWORD = sys.env.getOrElse("MYSQL_PASSWORD", "")
 }

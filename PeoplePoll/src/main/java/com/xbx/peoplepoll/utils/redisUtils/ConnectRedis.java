@@ -72,7 +72,7 @@ public class ConnectRedis {
             // 2. 连接信息
             String url = "jdbc:mysql://master1:3306/weibo?useSSL=false&serverTimezone=Asia/Shanghai";
             String user = "root";
-            String password = "1234";
+            String password = System.getenv("MYSQL_PASSWORD") != null ? System.getenv("MYSQL_PASSWORD") : "";
             // 3. 获取连接并返回
             return DriverManager.getConnection(url, user, password);
         } catch (SQLException e) {
